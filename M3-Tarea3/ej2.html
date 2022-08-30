@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Ejericio 2</title>
+</head>
+
+<body>
+    <div id="ej">
+        <script>
+            var mensaje;
+            var opcion = confirm("Quieres ingresar 3 Numeros para Encontrar el Mayor?");
+            if (opcion == true) {
+                const num1 = parseInt(prompt('Ingrese primer número:', ''));
+                const num2 = parseInt(prompt('Ingrese segundo número:', ''));
+                const num3 = parseInt(prompt('Ingrese tercer número:', ''));
+                if (num1 != Number || num2 != Number || num3 != Number) {
+                    document.write(`Error En Datos Ingresados`);
+                } else {
+                    if (num1 > num2 && num1 > num3) {
+                        document.write(`el mayor es el numero ${num1}`);
+                    } else if (num2 > num3) {
+                        document.write(`el mayor es el numero ${num2}`);
+                    } else if (num3 > num2) {
+                        document.write(`el mayor es el numero ${num3}`);
+                    }
+                }
+            } else {
+                document.write(`Hasta Luego`);
+            }    
+        </script>
+    </div>
+</body>
+
+</html>
