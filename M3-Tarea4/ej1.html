@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="ej1.css">
+</head>
+
+<body class="fondo">
+
+    <div class="container">
+        <div class="item alt1" id="box1">1</div>
+        <div class="item alt2" id="box2">2</div>
+        <div class="item alt3" id="box3">3</div>
+    </div>
+
+    <script>
+        const alternar1 = document.getElementsByClassName('alt1')[0];
+        alternar1.addEventListener('click', function (e) {
+            e.currentTarget.classList.toggle('activo');
+            document.bgColor = "red";
+        });
+    
+        const alternar2 = document.getElementsByClassName('alt2')[0];
+        alternar2.addEventListener('click', function (e) {
+            e.currentTarget.classList.toggle('activo');
+            document.bgColor = "green";
+        });
+
+        const alternar3 = document.getElementsByClassName('alt3')[0];
+        alternar3.addEventListener('click', function (e) {
+            e.currentTarget.classList.toggle('activo');
+            document.bgColor = "blue";
+        });
+
+   
+    </script>
+</body>
+
+</html>

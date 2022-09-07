@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.container{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	width: 1100px;
+	height: 900px;
+
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+	height: 300px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    color: black; 
+   
+}
+#box1{
+    border: solid;
+	background-color: aqua;   
+}
+#box2{
+    border: solid;
+	background-color: firebrick; 
+}
+#box3{
+    border: solid;
+	background-color: olive;
+}

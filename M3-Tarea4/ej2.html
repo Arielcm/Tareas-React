@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ej2.css">
+    <title>Ejercicio 2</title>
+    
+</head>
+
+<body>
+    <textarea id="content" placeholder="Contador de caracteres"></textarea>
+	<p>Cantidad de caracteres: <span id="counter"></span></p>
+
+	<script>
+		function count(){
+			document.getElementById("counter").textContent = document.getElementById("content").value.length;
+		}
+		
+		document.getElementById("content").addEventListener("input", count);
+	</script>
+</body>
+
+</html>
